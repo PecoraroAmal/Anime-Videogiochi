@@ -37,7 +37,87 @@ nav {
 }
 
 .page-title {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    text-align: center;
 }
+
+.content-section {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    margin: 20px;
+}
+
+/* Separate the first image from the title */
+.content-section:first-child {
+    margin-top: 50px;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center; /* Center the image within its container */
+}
+
+.copertina img {
+    max-width: 100%;
+    height: 50%;
+}
+.info img{
+    max-width: 30%;
+    height: 50%;
+}
+.storia img{
+    max-width: 100%;
+    height: 50%;
+}
+.text-content {
+    flex: 2;
+    padding: 0 20px;
+}
+.sezione {
+    text-align: left;
+    padding: 0 2.5%;
+}
+.divisoreGrande{
+    width: 95%; /* Larghezza del divisore */
+    margin: 0 auto; /* Centrato rispetto alla larghezza della pagina */
+    border-top: 2px solid #000; /* Stile della linea del divisore */
+    margin-bottom: 20px; /* Spazio tra i contenuti sopra e sotto il divisore */
+}
+.divisorePiccolo{
+    width: 30%; /* Larghezza del divisore */
+    margin: 0 auto; /* Centrato rispetto alla larghezza della pagina */
+    border-top: 1px solid #999; /* Stile della linea del divisore */
+    margin-bottom: 20px; /* Spazio tra i contenuti sopra e sotto il divisore */
+}
+.divisoreMedio{
+    width: 60%; /* Larghezza del divisore */
+    margin: 0 auto; /* Centrato rispetto alla larghezza della pagina */
+    border-top: 1px solid #999; /* Stile della linea del divisore */
+    margin-bottom: 20px; /* Spazio tra i contenuti sopra e sotto il divisore */
+}
+/* Aggiunta della classe .characters-row per le immagini nella fila da tre */
+.characters-row img {
+    max-width: 50%;
+    height: 50%;
+}
+.characters-row .image-container {
+    margin-right: 0%; /* Spazio tra le immagini */
+}
+
+.characters-row .image-container:last-child {
+    margin-right: 0; /* Rimuovi il margine alla fine della riga */
+}
+
+/* Aggiunta della classe .last-row per le immagini nell'ultima fila */
+.last-row img {
+    max-width: 40%;
+    height: 50%;
+}
+.last-row .image-container {
+    margin-right: 2%; /* Spazio tra le immagini */
+}
+
+.last-row .image-container:last-child {
+    margin-right: 0; /* Rimuovi il margine alla fine della riga */
+}
+
