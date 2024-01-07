@@ -62,7 +62,7 @@ nav {
     height: 50%;
 }
 .info img{
-    max-width: 30%;
+    max-width: 50%;
     height: 50%;
 }
 .storia img{
@@ -95,7 +95,7 @@ nav {
     border-top: 1px solid #999; /* Stile della linea del divisore */
     margin-bottom: 20px; /* Spazio tra i contenuti sopra e sotto il divisore */
 }
-/* Aggiunta della classe .characters-row per le immagini nella fila da tre */
+/* Centra tutto su desktop e mobile */
 .pic {
     text-align: center;
 }
@@ -103,9 +103,18 @@ nav {
 .pic img {
     display: block;
     margin: auto;
+    max-width: 100%; /* Per assicurarti che l'immagine non superi la larghezza del suo contenitore */
 }
 
 .pic p {
-    width: 50%;
+    width: 80%; /* Modifica della larghezza per adattarsi meglio su dispositivi più piccoli */
     margin: 20px auto;
 }
+
+/* Aggiungi regole per la responsività su schermi più piccoli (max-width 767px è un esempio) */
+@media only screen and (max-width: 767px) {
+    .pic p {
+        width: 100%; /* Imposta la larghezza del paragrafo al 100% su schermi più piccoli */
+    }
+}
+
