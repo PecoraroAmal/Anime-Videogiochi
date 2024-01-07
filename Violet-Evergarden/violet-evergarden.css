@@ -90,34 +90,22 @@ nav {
     margin-bottom: 20px; /* Spazio tra i contenuti sopra e sotto il divisore */
 }
 .divisoreMedio{
-    width: 60%; /* Larghezza del divisore */
+    width: 50%; /* Larghezza del divisore */
     margin: 0 auto; /* Centrato rispetto alla larghezza della pagina */
     border-top: 1px solid #999; /* Stile della linea del divisore */
     margin-bottom: 20px; /* Spazio tra i contenuti sopra e sotto il divisore */
 }
 /* Aggiunta della classe .characters-row per le immagini nella fila da tre */
-.characters-row img {
-    max-width: 50%;
-    height: 50%;
-}
-.characters-row .image-container {
-    margin-right: 0%; /* Spazio tra le immagini */
+.pic {
+    text-align: center;
 }
 
-.characters-row .image-container:last-child {
-    margin-right: 0; /* Rimuovi il margine alla fine della riga */
+.pic img {
+    display: block;
+    margin: auto;
 }
 
-/* Aggiunta della classe .last-row per le immagini nell'ultima fila */
-.last-row img {
-    max-width: 40%;
-    height: 50%;
+.pic p {
+    width: 50%;
+    margin: 20px auto;
 }
-.last-row .image-container {
-    margin-right: 2%; /* Spazio tra le immagini */
-}
-
-.last-row .image-container:last-child {
-    margin-right: 0; /* Rimuovi il margine alla fine della riga */
-}
-
